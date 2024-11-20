@@ -8,9 +8,15 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/logo.png', sizes: '64x64', type: 'image/png' },  // Larger size
-      { url: '/logo.png', sizes: '180x180', type: 'image/png' }, // For Apple devices
+      { url: '/logo-white.png', sizes: '64x64', type: 'image/png' },  // Larger size
+      { url: '/logo-white.png', sizes: '180x180', type: 'image/png' }, // For Apple devices
     ],
+    shortcut: '/logo-white.png',
+    apple: '/logo-white.png',
+    other: {
+      rel: 'apple-touch-icon',
+      url: '/logo-white.png',
+    },
   },
 }
 

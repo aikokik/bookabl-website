@@ -12,7 +12,7 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  { href: '/contact', label: 'Book a demo' },
+  { href: '/contact', label: 'Contact us' },
 ]
 
 function DesktopNav() {

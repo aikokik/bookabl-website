@@ -36,6 +36,11 @@ function Hero() {
             <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
               Integrate venue booking into your platform with a single API, show real-time availability and accept bookings online, power custom revenue models, and build a more profitable business.
             </p>
+            <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
+            <Button variant="secondary" href="/contact">
+              Request a demo
+            </Button>
+          </div>
           </div>
           <div className="relative flex items-center justify-center">
             <img 
