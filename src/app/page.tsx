@@ -37,7 +37,7 @@ function Hero() {
               Integrate venue booking into your platform with a single API, show real-time availability and accept bookings online, power custom revenue models, and build a more profitable business.
             </p>
             <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button variant="secondary" href="/contact">
+            <Button href="/contact" className="px-8 py-4 text-lg font-medium bg-gradient-to-r from-teal-400 to-emerald-400 hover:from-teal-500 hover:to-emerald-500 text-white">
               Request a demo
             </Button>
           </div>
