@@ -159,10 +159,10 @@ export function Footer() {
       <Gradient className="relative">
         <div className="absolute inset-2 rounded-4xl bg-white/80" />
         <Container>
-            <PlusGridRow>
-              <div className="grid grid-cols-1 gap-y-8 pb-3 lg:grid-cols-3 lg:gap-4">
-                <div className="relative flex items-center gap-4 ">
-                  <PlusGridItem className="pt-6 lg:pb-6">
+          <PlusGridRow>
+            <div className="grid grid-cols-1 gap-y-8 pb-3 lg:grid-cols-3 lg:gap-4">
+              <div className="relative flex items-center gap-4">
+                <PlusGridItem className="pt-6 lg:pb-6">
                   <Logo className="h-20 w-20" />
                   <span className="text-2xl font-medium">Bookabl</span>
                   <Copyright />

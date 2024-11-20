@@ -30,7 +30,7 @@ function Hero() {
         <Navbar />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
           <div>
-            <h1 className="font-display text-balance text-4xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-6xl/[0.8] md:text-7xl/[0.8]">
+            <h1 className="font-display text-balance text-4xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-6xl/[0.8] md:text- /[0.8]">
               Effortless Booking
             </h1>
             <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
@@ -44,9 +44,13 @@ function Hero() {
           </div>
           <div className="relative flex items-center justify-center">
             <img 
-              src="/diagram.png" 
+              src="/board.jpg" 
               alt="Booking Platform Preview"
-              className="rounded-lg object-cover w-[700px] h-auto"
+              className="rounded-lg object-cover w-[700px] h-auto bg-transparent"
+              style={{
+                background: 'transparent',
+                mixBlendMode: 'multiply'
+              }}
             />
           </div>
         </div>
