@@ -54,9 +54,9 @@ export default function Contact() {
                 <Logo className="h-20 w-20" />
               </Link>
             </div>
-            <h1 className="mt-8 text-base/6 font-medium">Book a demo & Contact Us</h1>
+            <h1 className="mt-8 text-base/6 font-medium">Get started</h1>
             <p className="mt-1 mb-6 text-sm/5 text-gray-600">
-              Fill out the form below to book a demo or contact us.
+              Fill out the form below to get started.
             </p>
             
             <div className="space-y-6">
@@ -121,7 +121,7 @@ export default function Contact() {
                 disabled={isSubmitting}
                 className="mt-8 w-full rounded-lg bg-black px-4 py-2 text-white hover:bg-black/90 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 disabled:opacity-50"
               >
-                {isSubmitting ? 'Sending...' : 'Send'}
+                {isSubmitting ? 'Sending...' : 'Continue'}
               </button>
             </div>
           </form>

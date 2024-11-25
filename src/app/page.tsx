@@ -34,17 +34,20 @@ function Hero() {
               Effortless Booking
             </h1>
             <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
-              Integrate venue booking into your platform with a single API, show real-time availability and accept bookings online, power custom revenue models, and build a more profitable business.
+              Simplify venue booking integration with our single API. Display real-time availability, accept online bookings, enable custom revenue models, and drive a more profitable business.
             </p>
             <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact" className="px-8 py-4 text-lg font-medium bg-gradient-to-r from-teal-400 to-emerald-400 hover:from-teal-500 hover:to-emerald-500 text-white">
+            <Button href="/contact?plan=demo" className="px-8 py-4 text-lg">
               Request a demo
-            </Button>
+              </Button>
+              <Button variant="secondary" href="/pricing" className="px-8 py-4 text-lg">
+                See pricing
+              </Button>
           </div>
           </div>
           <div className="relative flex items-center justify-center">
             <img 
-              src="/board.jpg" 
+              src="/platforms.png" 
               alt="Booking Platform Preview"
               className="rounded-lg object-cover w-[700px] h-auto bg-transparent"
               style={{
@@ -70,14 +73,14 @@ function APIFeatureSection() {
               A fully integrated suite of booking solutions
             </Heading>
             <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
-              One API for All Your Bookings – Simplify Integration. Connect once, and let your bookings flow seamlessly to the right venue platform.
+              One API for All Your Bookings – Simplify Integration. Connect once, and let your bookings flow seamlessly to the right venue booking platform.
             </p>
           </div>
           <div>
             <Screenshot
               width={1216}
-              height={768}
-              src="/platforms.png"
+              height={625}
+              src="/board.jpg" 
               className="w-full max-w-[800px] object-contain mx-auto"
             />
           </div>

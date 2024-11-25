@@ -5,11 +5,13 @@ export function Screenshot({
   height,
   src,
   className,
+  alt="",
 }: {
   width: number
   height: number
   src: string
   className?: string
+  alt?: string
 }) {
   return (
     <div
@@ -21,7 +23,7 @@ export function Screenshot({
     >
       <div className="absolute -inset-[var(--padding)] rounded-[calc(var(--radius)+var(--padding))] shadow-sm ring-1 ring-black/5 [--padding:theme(spacing.2)]" />
       <img
-        alt=""
+        alt={alt}
         src={src}
         className="h-full rounded-[var(--radius)] shadow-2xl ring-1 ring-black/10"
       />
