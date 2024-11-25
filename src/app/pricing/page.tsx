@@ -17,7 +17,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Pricing',
   description:
-    'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
+    'API Access to integrate with venue booking platforms',
 }
 
 const tiers = [
@@ -493,10 +493,6 @@ export default function Pricing({
 }: {
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
-  let tier =
-    typeof searchParams.tier === 'string'
-      ? tiers.find(({ slug }) => slug === searchParams.tier)!
-      : tiers[0]
 
   return (
     <main className="overflow-hidden">
