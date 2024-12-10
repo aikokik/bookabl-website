@@ -100,7 +100,7 @@ export default function Contact() {
                 />
               </div>
 
-              <div>
+              {/* <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700">
                   Message (optional)
                 </label>
@@ -110,7 +110,7 @@ export default function Contact() {
                   rows={4}
                   className="mt-1 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm focus:border-black focus:outline-none focus:ring-black"
                 />
-              </div>
+              </div> */}
 
               {submitError && (
                 <p className="mt-2 text-sm text-red-600">{submitError}</p>

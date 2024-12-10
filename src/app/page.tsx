@@ -28,33 +28,50 @@ function Hero() {
       <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" />
       <Container className="relative">
         <Navbar />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
-          <div>
-            <h1 className="font-display text-balance text-4xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-6xl/[0.8] md:text- /[0.8]">
-              Effortless Booking
+        <div className="flex flex-col items-center text-center pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
+          <div className="max-w-3xl">
+            <h1 className="font-display text-balance text-4xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-6xl/[0.8] md:text-5xl/[0.8]">
+              Embedded Product Integrations
             </h1>
-            <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
-              Simplify venue booking integration with our single API. Display real-time availability, accept online bookings, enable custom revenue models, and drive a more profitable business.
+            <p className="mt-8 text-lg/7 font-medium text-gray-400/90 sm:text-xl/8 mx-auto">
+              Bookabl helps teams ship product integrations in hours, not weeks. Read and write data using unified APIs or sync it straight to your database privately.
             </p>
-            <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="/contact?plan=demo" className="px-8 py-4 text-lg">
-              Request a demo
+            <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row justify-center">
+              <Button href="/contact?plan=demo" className="px-8 py-4 text-lg">
+                Get Started
               </Button>
-              <Button variant="secondary" href="/pricing" className="px-8 py-4 text-lg">
+              {/* <Button variant="secondary" href="/pricing" className="px-8 py-4 text-lg">
                 See pricing
-              </Button>
+              </Button> */}
+            </div>
           </div>
-          </div>
-          <div className="relative flex items-center justify-center">
+          <div className="mt-16 relative flex flex-col items-center justify-center w-full">
             <img 
-              src="/platforms.png" 
+              src="/integration-board.jpg" 
               alt="Booking Platform Preview"
-              className="rounded-lg object-cover w-[700px] h-auto bg-transparent"
+              className="rounded-lg object-cover w-full max-w-[1000px] h-auto bg-transparent"
               style={{
                 background: 'transparent',
                 mixBlendMode: 'multiply'
               }}
             />
+            
+            {/* Integration Pills */}
+            <div className="flex flex-wrap justify-center gap-4 mt-8">
+              {[
+                'Booking Channels',
+                'CRM',
+                'Premium Banking Services',
+                'POS'
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="px-6 py-2 rounded-full bg-white/10 backdrop-blur-sm text-gray-800 font-medium border border-gray-200 hover:bg-white/20 transition-colors"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </Container>
@@ -68,20 +85,24 @@ function APIFeatureSection() {
       <Container className="pb-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <Subheading>Modular solutions</Subheading>
+            <Subheading>Effortless Sync Pipeline Orchestration
+</Subheading>
             <Heading as="h2" className="max-w-3xl">
-              A fully integrated suite of booking solutions
+              A fully integrated suite of restaurant tech stack solutions
             </Heading>
             <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
-              One API for All Your Bookings – Simplify Integration. Connect once, and let your bookings flow seamlessly to the right venue booking platform.
+              One Integration for Your Entire Restaurant Tech Stack – Simplify Connectivity. Connect once and effortlessly manage multi-way connections across booking software, POS systems, CRMs, and booking channels.
             </p>
           </div>
           <div>
-            <Screenshot
-              width={1216}
-              height={625}
-              src="/board.jpg" 
-              className="w-full max-w-[800px] object-contain mx-auto"
+            <img 
+              src="/board-integrations.jpg" 
+              alt="Booking Platform Preview"
+              className="rounded-lg object-cover w-full max-w-[1000px] h-auto bg-transparent"
+              style={{
+                background: 'transparent',
+                mixBlendMode: 'multiply'
+              }}
             />
           </div>
         </div>
@@ -94,18 +115,23 @@ function BookingFeatureSection() {
   return (
     <div className="overflow-hidden">
       <Container className="pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="flex flex-col items-center text-center pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
           <div>
             <Subheading>Connect</Subheading>
             <Heading as="h2" className="max-w-3xl">
-              Set up real-time availability
+              Connect Your App To The Universe
             </Heading>
-            <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
-              Integrate booking into your platform or marketplace for end-to-end booking experiences.
+            <p className="mt-8 text-lg/7 font-medium text-gray-400/90 sm:text-xl/8 mx-auto">
+              Dozens of integrations supported across direct & aggregator connectors
             </p>
-          </div>
-          <div>
-            <img src="/screen.png" alt="phone" width={400} height={600} className="phone-img" />
+                        <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row justify-center">
+              <Button href="/contact?plan=request" className="px-8 py-4 text-lg">
+                Request
+              </Button>
+              {/* <Button variant="secondary" href="/pricing" className="px-8 py-4 text-lg">
+                See pricing
+              </Button> */}
+            </div>
           </div>
         </div>
       </Container>
@@ -204,7 +230,7 @@ export default function Home() {
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
           <APIFeatureSection />
           <BookingFeatureSection />
-          <BentoSection />
+          {/* <BentoSection /> */}
         </div>
       </main>
       <Footer />
