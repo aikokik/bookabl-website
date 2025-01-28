@@ -59,10 +59,10 @@ function Hero() {
             {/* Integration Pills */}
             <div className="flex flex-wrap justify-center gap-4 mt-8">
               {[
+                'AI agents',
+                'Booking Platforms',
                 'Booking Channels',
-                'CRM',
                 'Premium Banking Services',
-                'POS'
               ].map((item) => (
                 <div
                   key={item}
@@ -91,7 +91,7 @@ function APIFeatureSection() {
               A fully integrated suite of restaurant tech stack solutions
             </Heading>
             <p className="mt-8 max-w-lg text-lg/7 font-medium text-gray-400/90 sm:text-xl/8">
-              One Integration for Your Entire Restaurant Tech Stack – Simplify Connectivity. Connect once and effortlessly manage multi-way connections across booking software, POS systems, CRMs, and booking channels.
+              One Integration for Your Entire Restaurant Tech Stack – Simplify Connectivity. Connect once and effortlessly manage multi-way connections across AI agents, booking software and booking channels.
             </p>
           </div>
           <div>
